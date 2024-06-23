@@ -1,0 +1,21 @@
+# epdlib
+epdlib==0.6.5.1
+colorzero==2.0
+gpiozero==2.0.1
+lgpio==0.2.2.0
+RPi.GPIO==0.7.1
+spidev==3.6
+
+# ePaper library
+-e "git+https://github.com/tomkins/waveshare-epaper.git@d86341d4efc144146537489b96927b3c1273079f#egg=waveshare_epd&subdirectory=RaspberryPi_JetsonNano/python"
+Pillow==10.3.0
+
+# Human readable formats
+humanize==4.9.0
+
+# HTTP requests
+requests==2.32.3
+certifi==2024.6.2
+charset-normalizer==3.3.2
+idna==3.7
+urllib3==2.2.2

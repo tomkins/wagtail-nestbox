@@ -1,0 +1,17 @@
+[Unit]
+Description=Wagtail Nest Box
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/lib/nestbox/venv/bin/python /usr/local/lib/nestbox/code/nestbox.py
+EnvironmentFile=/etc/nestbox_env.conf
+User=nestbox
+Group=nogroup
+PrivateTmp=true
+WorkingDirectory=/tmp
+Restart=always
+RestartSec=120
+
+[Install]
+WantedBy=multi-user.target
