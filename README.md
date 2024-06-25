@@ -2,6 +2,20 @@
 
 A Raspberry Pi project to show GitHub stats for [Wagtail](https://github.com/wagtail).
 
+## Why?
+
+After attending [Wagtail Space NL 2024](https://nl.wagtail.space/), speakers were given a bird
+nest box as a thank you gift. To keep it as a more permanent memento, I decided to come up with an
+alternative use for it - showing Wagtail stats pulled from GitHub!
+
+<img src="/assets/images/nestbox_with_lanyard.jpg" width="400" height="400" alt="Nest box with lanyard"> <img src="/assets/images/nestbox_wagtail.jpg" width="400" height="400" alt="Nest box with display attached">
+
+It's currently set to show any repository from the Wagtail organisation that has had any commits
+in the past 30 days. Number of open issues, open pull requests, and stars are shown, along with
+the latest commit and commit message.
+
+A huge thank you to [Four Digits](https://github.com/fourdigits) for the gift, and for running
+such a fantastic event!
 
 ## Setup
 
