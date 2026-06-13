@@ -211,7 +211,13 @@ class Nestbox:
 
         for repo_edge in response["data"]["organization"]["repositories"]["edges"]:
             repo_node = repo_edge["node"]
-            history_edge = repo_node["defaultBranchRef"]["target"]["history"]["edges"][0]
+
+            default_branch_ref = repo_node["defaultBranchRef"]
+            if default_branch_ref is None:
+                # A GitHub repo with no actual repo/commits
+                continue
+
+            history_edge = default_branch_ref["target"]["history"]["edges"][0]
             commit_node = history_edge["node"]
 
             repo_name = repo_node["name"]
